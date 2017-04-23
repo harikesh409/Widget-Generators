@@ -52,26 +52,43 @@ border-radius: 10px;
 	border-right-color: #999999;
 	padding: 4px 8px;
 }
-form .button{
-    border: none;  
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-	background-color: white; 
-    color: black; 
-    border: 2px solid #F9780E;
+.button{
+background: #F9780E;
+background: -webkit-linear-gradient(top, #F9780E 0%, #F9EAD4 100%);
+background: -moz-linear-gradient(top, #F9780E 0%, #F9EAD4 100%);
+background: -o-linear-gradient(top, #F9780E 0%, #F9EAD4 100%);
+background: -ms-linear-gradient(top, #F9780E 0%, #F9EAD4 100%);
+background: linear-gradient(top, #F9780E 0%, #F9EAD4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9780E', endColorstr='#F9EAD4',GradientType=0 );
+border: 1px solid #F9780E;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+padding: 6px 12px;
+margin:0;
+-webkit-box-shadow: 0 1px 0 #F9780E inset, 1px 1px 1px rgba(223,223,223,0.4);
+-moz-box-shadow: 0 1px 0 #F9780E inset, 1px 1px 1px rgba(223,223,223,0.4);
+box-shadow: 0 1px 0 #F9780E inset, 1px 1px 1px rgba(223,223,223,0.4);
+color: #000000;
+text-shadow: 0 1px 0 #fff;
+line-height: 1.2;
+cursor: pointer;
+font-weight:800;
+font-size: 13px;
 }
-form .button:hover {
-	 background-color: #F9780E;
-    color: white;
+.button:hover {
+    background: -webkit-linear-gradient(top, #FF6600 0%, #FED9BF 100%);
+background: -moz-linear-gradient(top, #FF6600 0%, #FED9BF 100%);
+background: -o-linear-gradient(top, #FF6600 0%, #FED9BF 100%);
+background: -ms-linear-gradient(top, #FF6600 0%, #FED9BF 100%);
+background: linear-gradient(top, #FF6600 0%, #FED9BF 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF6600', endColorstr='#FED9BF',GradientType=0 );
+text-decoration:none !important;
+
 }
-form .button:disabled{
-	background-color: grey;
+.button:disabled {
+	cursor:not-allowed;
 	border:none;
-	cursor: not-allowed;
+	background-color:grey;
+	color:grey;
 }
