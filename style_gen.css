@@ -1,0 +1,77 @@
+body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:small;}
+            #content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #F9EAD4;
+border:2px solid #F9780E;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+}
+#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em
+;padding: 3px 10px;background-color: #F9780E;font-size:16px;color:#000;border:1px solid #111;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+}
+            fieldset{-moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px;border:1px solid #AAA;}
+            fieldset legend{font-size:15px;font-weight:bold; padding:2px 10px;border:1px solid #AAA;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;}
+			.redius{
+ -moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+#BTgadform {
+	font-family: Georgia, serif;
+}
+
+#BTgadmn fieldset {
+	border: 1px solid #004000;
+	background: #BFE3FE;
+	padding: 0 20px;
+}
+
+#BTgadmn legend {
+	background: #F9780E;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#BTgad fieldset {
+	border: 1px solid #004000;
+	background: #FFFFFF;
+	padding: 0 20px;
+}
+#BTgad legend {
+	background: #F9780E;
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+form .button{
+    border: none;  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	background-color: white; 
+    color: black; 
+    border: 2px solid #F9780E;
+}
+form .button:hover {
+	 background-color: #F9780E;
+    color: white;
+}
+form .button:disabled{
+	background-color: grey;
+	border:none;
+	cursor: not-allowed;
+}
