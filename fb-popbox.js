@@ -20,6 +20,20 @@ txtarea.value+="\") no-repeat scroll left center transparent !important;display:
 txtarea.value+="<div class=\"bttlikebox\"><div><iframe src=\"http:\/\/www.facebook.com\/plugins\/likebox.php?href="+fbid;
 txtarea.value+="&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270\" scrolling=\"no\" frameborder=\"0\" scrolling=\"no\" style=\"border: medium none; overflow: hidden; height: 270px; width: 245px;background:#fff;\"><\/iframe><\/div><a href='http://www.blogg-tricks.blogspot.in'><img src='http://1.bp.blogspot.com/-RikrI-c_pyQ/T2DTcP6aMvI/AAAAAAAAAL0/H6v7PVoHM_w/s1600/1x1juice.png'/></a><\/div><!-- BTT Facebook Widget End -->";
 }
+function bttpreview() {
+	var code=document.form1.btttxtarea.value;
+	var msg="";
+	if(code == "")
+	{
+		alert("Nothing to preview");
+		return false;
+	}
+	msg=open("","","toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,copyhistory=no,width=600,height=300");
+msg.document.write("<html> <head><script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'/></head><body>"+code+"</body></html>");
+
+return false;
+}
+
 document.write("Copyright &copy 2013 - ");
 var today = new Date();
 var year = today.getFullYear();
