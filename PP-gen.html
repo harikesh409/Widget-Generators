@@ -1,0 +1,104 @@
+<html>
+<head>
+<link  rel="stylesheet" type="text/css" href="https://harikesh409.github.io/Widget-Generators/style_gen.css">
+<script language="javascript">
+function create_privacy(){
+var company = document.privacy_form.cname.value;
+var webmaster = document.privacy_form.wmemail.value;
+if(document.privacy_form.cdetails.checked){
+	cc=1;
+	}
+	else{
+	cc=0;
+	}
+var msg = "\n"; // set as global variable
+msg += "<h3>Privacy</h3>\n";
+msg += "<p><b>" + company +" respects your privacy.</b></p>\n";
+msg += "<p>Any personal information you provide to us including and similar to your name, address, telephone number and e-mail address will not be released, sold, or rented to any entities or individuals outside of " + company +".</p>\n";
+msg += "\n";
+if (cc==0){
+msg += "<p><b>Credit card details</b></p>\n";
+msg += "<p>" + company +" will never ask for Credit Card details and request that you do not enter it on any of the forms on " + company +".</p>\n";
+msg += "\n";
+}
+if (cc==1){
+msg += "<p><b>Credit card details</b></p>\n";
+msg += "<p>YOU MUST INSERT YOUR CREDIT CARD POLICY HERE</p>\n";
+msg += "\n";
+}
+msg += "<p><b>External Sites.</b></p>\n";
+msg += "<p>" + company +" is not responsible for the content of external internet sites. You are advised to read the privacy policy of external sites before disclosing any personal information.</p>\n";
+msg += "\n";
+msg += "<p><b>Cookies </b></p>\n";
+msg += "<p>A \"cookie\" is a small data text file that is placed in your browser and allows " + company +" to recognize you each time you visit this site(customisation etc). Cookies themselves do not contain any personal information, and " + company +" does not use cookies to collect personal information. Cookies may also be used by 3rd party content providers such as newsfeeds.</p>\n";
+msg += "\n";
+msg += "<p><b>Remember The Risks Whenever You Use The Internet </b></p>\n";
+msg += "<p>While we do our best to protect your personal information, we cannot guarantee the security of any information that you transmit to " + company +" and you are solely responsible for maintaining the secrecy of any passwords or other account information. In addition other Internet sites or services that may be accessible through " + company +" have separate data and privacy practices independent of us, and therefore we disclaim any responsibility or liability for their policies or actions. </p>\n";
+msg += "<p>Please contact those vendors and others directly if you have any questions about their privacy policies.</p>\n";
+msg += "\n";
+msg += "For any other information email <a href='mailto:"+webmaster+"'>webmaster</a>\n";
+
+msg += '\n\n<!-- Created by Blogger Tricks and Tips http://www.blogg-tricks.com -->\n<!-- end code -->\n';
+the_code = '<!-- start privacy policy code -->\n'+msg;
+
+document.privacy_form.privacy_code.value=the_code;
+
+
+}
+
+function privacy_preview() {
+msg="";
+var the_code = document.privacy_form.privacy_code.value;
+
+if(the_code == ""){alert("Nothing to preview");return false}
+	msg=open("","","toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,copyhistory=no,width=600,height=300");
+msg.document.write('<html><head><title>test page</title><style type=text/css>body,TD{font : 8pt verdana, sans-serif;}</style></head><body bgcolor=white><b>This is how your privacy policy will appear in a browser.</b><hr><table bgcolor="#ffffff" border="1" width="95%" align="center"><tr><td>'+the_code+'</td></tr></table><hr>');
+msg.document.write('</body></html>');
+return false;
+}
+</script>
+</head>
+<div id="content-wrapper">
+<h2>Privacy Policy Generator</h2>
+
+<br>
+<form name="privacy_form" action="#">
+<fieldset class="redi" style="border: 1px solid #7F9DB9;">
+<legend align="left" class="redi" style="border: 1px solid #7F9DB9; margin-left: 20px; padding: 3px 10px;"><b>Settings</b></legend>
+<br>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td width="40%"><label>Your Company/Brand Name</label>
+</td>
+<td width="60%"><input class="text-input" name="cname" size="40" value="Blogger Tricks and Tips" type="text">
+</td>
+</tr>
+<tr>
+<td width="40%"><label>Admin email address</label>
+</td>
+<td width="60%"><input class="text-input" name="wmemail" size="40" value="p.harikesh409@gmail.com" type="text">
+</td>
+</tr>
+<tr>
+<td width="40%"><label>Do you accept credit card details?</label>
+</td>
+<td width="60%"><input name="cdetails" type="checkbox">
+</td>
+</tr>
+</tbody></table>
+<br></fieldset><br>
+
+<center>
+<input class="button" value="Generate" onclick="create_privacy();return false" style="font-family: calibri; font-size: 22px; margin-right: 5px; width: 120px;" type="button">&nbsp;&nbsp;<input class="button" value="Preview" onClick="privacy_preview();return false"style="font-family: calibri; font-size: 22px; margin-right: 5px; width: 120px;"type="button">&nbsp;&nbsp;<input class="button" name="Clear" style="font-family: calibri; font-size: 22px; margin-right: 5px; width: 120px;" type="reset">
+<br>
+<hr><br>
+<b>Your code will appear below</b><br>
+<br>
+<textarea class="textarea-box" cols="45" rows="10" name="privacy_code" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style=' background:#ffffff;width:100%;height:300px;' readonly='readonly'></textarea>
+</form><br>
+<br>
+<script type="text/javascript" src="https://harikesh409.github.io/Widget-Generators/copyright.js"></script>
+</center>
+</div>
+</html>
