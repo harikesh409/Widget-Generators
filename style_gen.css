@@ -1,7 +1,18 @@
-body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:small;}
-            #content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #F9EAD4;
-border:2px solid #F9780E;
--webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+body 
+{ 
+	font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:small;
+}
+            #content-wrapper { 
+		    width: 98%;
+		    max-widtd:980px;  
+		    margin: 0 auto;  
+		    padding: 5px;  
+		    text-align: left;  
+		    background-color: #F9EAD4;
+		    border:2px solid #F9780E;
+		    -webkit-border-radius: 20px;
+		    -moz-border-radius: 20px;
+		    border-radius: 20px;
 }
 #content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em
 ;padding: 3px 10px;background-color: #F9780E;font-size:16px;color:#000;border:1px solid #111;
@@ -91,4 +102,36 @@ text-decoration:none !important;
 	border:none;
 	background-color:grey;
 	color:grey;
+}
+.textarea-box{
+border:5x solid #FF4408;
+padding:6px;
+-webkit-resize: none;
+-moz-resize: none;
+resize: none;
+-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+-moz-box-shadow: 1px 1px 1px #dfdfdf;
+box-shadow: 1px 1px 1px #dfdfdf;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.text-input, .select-box{
+margin:0 2px;
+padding:4px 6px;
+border: 1px solid #F9780E;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+font-family: gergia;
+font-style: italic;
+
+-webkit-box-shadow: 1px 1px 1px #FC7507;
+-moz-box-shadow: 1px 1px 1px #FC7507;
+box-shadow: 1px 1px 1px #FC7507;
+font-size: 14px;
+color: #666;
+max-width:auto;
 }
