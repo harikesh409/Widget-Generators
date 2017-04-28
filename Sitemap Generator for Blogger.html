@@ -1,0 +1,41 @@
+<link href="https://harikesh409.github.io/Widget-Generators/style_gen.css" rel="stylesheet" type="text/css">
+<div id='content-wrapper'>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.6.0/clipboard.min.js"></script>
+<script>
+    var clipboard = new Clipboard('.button');
+new Clipboard('.button', {
+    text: function(trigger) {
+        return trigger.getAttribute('aria-label');
+    }
+});
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copy() {
+		alert("Code copied to clipboard");
+	}
+    </script>
+<h2>
+Sitemap generator for blogger
+</h2>
+
+<div id="BTgad"><center>
+<span class="redius">
+<br>
+Enter complete URL http:// 
+</span>
+<input class="text-input" id="theInput" onclick="this.focus();this.select()" type="text" value="http://www.blogg-tricks.blogspot.in">
+<input id="submit-smap" onClick="generate()" value="Submit" type="button" class="button" style="margin:10px;">
+<input class="button" type="button" value="Copy" data-clipboard-action="copy" data-clipboard-target="#bttcode" style="margin-right:10px;"onClick="copy()">
+<input class="button" value="Reset" type="button" onClick="reset()">
+<br>
+<textarea class="textareaBox" id="bttcode" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" readonly style="width:100%; height:80px"></textarea>
+<br>
+		<script type="text/javascript" src="https://harikesh409.github.io/Widget-Generators/sitemap-generate.js"></script>
+        </center>
+        </div>
+        </div>
